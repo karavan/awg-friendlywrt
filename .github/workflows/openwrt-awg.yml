@@ -17,6 +17,7 @@ jobs:
           - pkgarch: aarch64_generic
             target: rockchip
             subtarget: armv8
+            vermagic: 6.1.57 SMP mod_unload modversions aarch64
     steps:
       - uses: actions/checkout@v4
         with:
