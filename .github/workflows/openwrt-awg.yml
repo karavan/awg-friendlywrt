@@ -1,4 +1,4 @@
-name: Create Release Mediatek Filogic
+name: Create Release NanoPi R3S
 #on: [push]
 on:
   push:
