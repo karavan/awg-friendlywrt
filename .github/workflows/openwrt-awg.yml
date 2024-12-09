@@ -21,11 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: openwrt/openwrt
+          repository: karavan/friendlywrt
           ref: v${{ matrix.tag }}
           fetch-depth: 0
 
-      - name: Update and install feeds for OpenWRT_v${{ matrix.tag }} ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}}
+      - name: Update and install feeds for FriendlyWRT_v${{ matrix.tag }} ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}}
         run: |
           pkgarch=${{ matrix.build_env.pkgarch}}
           target=${{ matrix.build_env.target}}
